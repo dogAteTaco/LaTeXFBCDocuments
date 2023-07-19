@@ -1,7 +1,7 @@
 %BEGIN_FOLD Formatting
 	\documentclass{article}
 	% Page size and margin
-	\usepackage[paperheight=5.5in,paperwidth=4.25in,margin=0.2in,heightrounded]{geometry}
+	\usepackage[paperheight=5.5in,paperwidth=4.3 in,margin=0.2in,heightrounded]{geometry}
 	
 	% Package to change font 
 	\usepackage{fontspec}
@@ -15,15 +15,16 @@
 	% Package neccesary for changing format of Titles and subtitles
 	\usepackage{titlesec}
 	% Center subsections
-	\titleformat{\subsection}[block]{\filcenter\bfseries}{\thesubsection.}{1em}{}
+	\titleformat{\subsection}[block]{\filcenter \bfseries \fontsize{11}{13}}{\thesubsection}{1em}{\fontspec{Cheyenne Sans}}
 	% Underline subbsubsections (SUMMARY and similar)
-	\titleformat{\subsubsection}[block]{\normalfont\normalsize}{\thesubsubsection \\}{0.1em}{\underline}
+	\usepackage{soul}
+	
+	\setul{0.05ex}{0.2ex}
+	\titleformat{\subsubsection}[block]{\normalfont\normalsize}{\thesubsubsection \\}{0.1em}{\ul}
 	
 	%Package necessary for censoring
 	\usepackage{censor}
 	
-	
-	%END_FOLD Formatting
 	% Title Page
 	\title{FBC Files}
 	\author{}
@@ -41,4 +42,20 @@
 	\include{Research/hiss charged agent}
 	\include{research/Hiss Cluster}
 	\include{research/Hiss-Corrupted Demolition Expert}
+	\include{research/Hiss Distorted Agent}
+	\include{research/Hiss Elevated Agent}
+	\include{research/Hiss Corrupted Security Guard}
+	\include{research/Hiss Corrupted Ranger}
+	\include{research/Hiss Corrupted Ranger (Airborne)}
+	\include{research/Hiss Sharpened Agent}
+	\include{research/Hiss Corrupted Sniper}
+	\include{research/Hiss Corrupted Trooper}
+	\include{research/Hiss Warped Agent}
+	\include{research/Analysis of Hiss Threat- Part I}
+	\include{research/Analysis of Hiss Threat- Part II}
+	\include{research/Analysis of Hiss Threat- Part III}
+	\include{research/Analysis of Hiss Threat- Part IV}
+	\include{research/Analysis of Hiss Threat- Part V}
+	\include{research/AWE Rising Frequency}
+	\include{Airplane Evaluation Order}
 \end{document}          
