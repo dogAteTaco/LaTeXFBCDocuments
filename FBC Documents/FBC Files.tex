@@ -15,16 +15,19 @@
 	% Package neccesary for changing format of Titles and subtitles
 	\usepackage{titlesec}
 	% Center subsections
-	\titleformat{\subsection}[block]{\filcenter \bfseries \fontsize{11}{13}}{\thesubsection}{1em}{\fontspec{Cheyenne Sans}}
+	\titleformat{\subsection}[block]{\filcenter \bfseries \fontsize{13}{13}}{\thesubsection}{1em}{\fontspec{Cheyenne Sans}}
+	% Format of Sections
+	\titleformat{\section}[block]{\filcenter \bfseries \fontsize{15}{13}}{\thesection}{1em}{\fontspec{Cheyenne Sans}}
 	% Underline subbsubsections (SUMMARY and similar)
 	\usepackage{soul}
 	
 	\setul{0.05ex}{0.2ex}
-	\titleformat{\subsubsection}[block]{\normalfont\normalsize}{\thesubsubsection \\}{0.1em}{\ul}
+	\titleformat{\subsubsection}[block]{\normalfont\normalsize \fontsize{13}{13}}{\thesubsubsection \\}{0.1em}{\ul}
 	
 	%Package necessary for censoring
 	\usepackage{censor}
 	
+	\usepackage{graphicx}
 	% Title Page
 	\title{FBC Files}
 	\author{}
@@ -37,6 +40,12 @@
 	\newpage
 	
 	% Research documents
+	\section*{\centering Research \& Records}
+	\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/Research}
+		\label{fig:research}
+	\end{figure}
 	\include{research/hiss agent}
 	\include{research/hiss barrier}
 	\include{Research/hiss charged agent}
@@ -57,5 +66,93 @@
 	\include{research/Analysis of Hiss Threat- Part IV}
 	\include{research/Analysis of Hiss Threat- Part V}
 	\include{research/AWE Rising Frequency}
-	\include{Airplane Evaluation Order}
+	\include{research/Airplane Evaluation Order}
+	
+	%Case Files
+	\include{case/Ashtray and Cigarette}
+	\include{case/Benicoff TV}
+	\include{case/Floppy Disk}
+	\include{case/Home Safe}
+	\include{case/Hotline}
+	\include{case/Jukebox}
+	\include{case/Merry-Go-Round Horse}
+	\include{case/Service Weapon}
+	\include{case/Slide Projector}
+	\include{case/X-Ray Light Box}
+	\include{case/Albany Summary}
+	\include{case/Albany Supplement}
+	\include{case/Bright Falls (1976) Summary}
+	\include{case/Bright Falls (1976) Supplement}
+	\include{case/Bright Falls Summary}
+	\include{case/Bright Falls Supplement}
+	\include{case/Butte Summary}
+	\include{case/Butte Supplement}
+	\include{case/Eagle Limited Summary}
+	\include{case/Eagle Limited Supplement}
+	\include{case/Emergency Call Summary}
+	\include{case/Emergency Call Supplement}
+	\include{case/Fra Mauro Summary}
+	\include{case/Fra Mauro Supplement}
+	\include{case/Havana Summary}
+	\include{case/Havana Supplement}
+	\include{case/Kyiv Summary}
+	\include{case/Kyiv Supplement}
+	\include{case/Meteor Hill Summary}
+	\include{case/Meteor Hill Supplement}
+	\include{case/Ordinary Summary}
+	\include{case/Ordinary Supplement}
+	\include{case/Sterling Summary}
+	\include{case/Sterling Supplement}
+	\include{case/Anchor Procedures}
+	\include{case/Anchor Supplement}
+	\include{case/Arcade Cabinets Procedures}
+	\include{case/Arcade Cabinets Supplement}
+	\include{case/Balloon Procedures}
+	\include{case/Balloon Supplement}
+	\include{case/Fan Procedures}
+	\include{case/Fan Supplement}
+	\include{case/Globe Procedures}
+	\include{case/Globe Supplement}
+	\include{case/Hammer Procedures}
+	\include{case/Hammer Supplement}
+	\include{case/Hand Chair Procedures}
+	\include{case/Letters Procedures}
+	\include{case/Maneki-neko Procedures}
+	\include{case/Mannequin Procedures}
+	\include{case/Mannequin Supplement}
+	\include{case/Mirror Procedures}
+	\include{case/Mirror Supplement}
+	\include{case/Movie Camera Procedures}
+	\include{case/Movie Camera Supplement}
+	\include{case/Paper Lantern Procedures}
+	\include{case/Paper Lantern Supplement}
+	\include{case/Picnic Basket Procedures}
+	\include{case/Picnic Basket Supplement}
+	\include{case/Pink Flamingo Procedures}
+	\include{case/Pink Flamingo Supplement}
+	\include{case/Plastic Tree Procedures}
+	\include{case/Plastic Tree Supplement}
+	\include{case/Post Box Procedures}
+	\include{case/Post Box Supplement}
+	\include{case/Pram Procedures}
+	\include{case/Pram Supplement}
+	\include{case/Refrigerator Procedures}
+	\include{case/Refrigerator Supplement}
+	\include{case/Rubber Duck Procedures}
+	\include{case/Rubber Duck Supplement}
+	\include{case/Surfboard Procedures}
+	\include{case/Surfboard Supplement}
+	\include{case/Swan Boat Procedures}
+	\include{case/Thermos Procedures}
+	\include{case/Tractor Procedures}
+	\include{case/Tractor Supplement}
+	\include{case/Traffic Light Procedures}
+	\include{case/Train Car Procedures}
+	\include{case/Typewritten Page Procedures}
+	\include{case/Typewritten Page Supplement}
+	\include{case/VHS Tape Procedures}
+	\include{case/VHS Tape Supplement}
+	\include{case/Vending Machine Procedures}
+	\include{case/Water Cooler Procedures}
+	
 \end{document}          
