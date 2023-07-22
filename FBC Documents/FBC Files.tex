@@ -28,9 +28,14 @@
 	\usepackage{censor}
 	
 	\usepackage{graphicx}
+	\usepackage{tikz}
+	\usetikzlibrary{shapes.geometric}
 	% Title Page
-	\title{FBC Files}
-	\author{}
+	\title{\begin{tikzpicture}
+			\filldraw[fill=black]  (0.2,0.6) rectangle (2.5,0);
+		\end{tikzpicture} Files}
+	\author{\censor{very long text}\\\censor{long long text}\\\censor{123}}
+	\date{\censor{something}, \censor{algo}\\ \today}
 	
 %END_FOLD Formatting
 
@@ -40,41 +45,46 @@
 	\newpage
 	
 	% Research documents
-	\section*{\centering Research \& Records}
+	\chapter{Research \& Records}
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/Research}
 		\label{fig:research}
 	\end{figure}
-	\include{research/hiss agent}
-	\include{research/hiss barrier}
-	\include{Research/hiss charged agent}
-	\include{research/Hiss Cluster}
-	\include{research/Hiss-Corrupted Demolition Expert}
-	\include{research/Hiss Distorted Agent}
-	\include{research/Hiss Elevated Agent}
-	\include{research/Hiss Corrupted Security Guard}
-	\include{research/Hiss Corrupted Ranger}
-	\include{research/Hiss Corrupted Ranger (Airborne)}
-	\include{research/Hiss Sharpened Agent}
-	\include{research/Hiss Corrupted Sniper}
-	\include{research/Hiss Corrupted Trooper}
-	\include{research/Hiss Warped Agent}
-	\include{research/Analysis of Hiss Threat- Part I}
-	\include{research/Analysis of Hiss Threat- Part II}
-	\include{research/Analysis of Hiss Threat- Part III}
-	\include{research/Analysis of Hiss Threat- Part IV}
-	\include{research/Analysis of Hiss Threat- Part V}
-	\include{research/AWE Rising Frequency}
-	\include{research/Airplane Evaluation Order}
+	\pagebreak
+	\section*{Hiss Research}
+	\include{hiss/hiss agent}
+	\include{hiss/hiss barrier}
+	\include{hiss/hiss charged agent}
+	\include{hiss/Hiss Cluster}
+	\include{hiss/Hiss-Corrupted Demolition Expert}
+	\include{hiss/Hiss Distorted Agent}
+	\include{hiss/Hiss Elevated Agent}
+	\include{hiss/Hiss Corrupted Security Guard}
+	\include{hiss/Hiss Corrupted Ranger}
+	\include{hiss/Hiss Corrupted Ranger (Airborne)}
+	\include{hiss/Hiss Sharpened Agent}
+	\include{hiss/Hiss Corrupted Sniper}
+	\include{hiss/Hiss Corrupted Trooper}
+	\include{hiss/Hiss Warped Agent}
+	\include{hiss/Analysis of Hiss Threat- Part I}
+	\include{hiss/Analysis of Hiss Threat- Part II}
+	\include{hiss/Analysis of Hiss Threat- Part III}
+	\include{hiss/Analysis of Hiss Threat- Part IV}
+	\include{hiss/Analysis of Hiss Threat- Part V}
+	
+	\section*{Reports}
+	\include{reports/AWE Rising Frequency}
+	\include{reports/Airplane Evaluation Order}
 	
 	%Case Files
-	\section*{Case Files}
+	\chapter{Case Files}
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/CaseFiles}
 		\label{fig:casefiles}
 	\end{figure}
+	\section*{Objects of Power}
 	\include{case/Ashtray and Cigarette}
 	\include{case/Benicoff TV}
 	\include{case/Floppy Disk}
@@ -85,6 +95,8 @@
 	\include{case/Service Weapon}
 	\include{case/Slide Projector}
 	\include{case/X-Ray Light Box}
+	
+	\section*{Altered World Events}
 	\include{case/Albany Summary}
 	\include{case/Albany Supplement}
 	\include{case/Bright Falls (1976) Summary}
@@ -109,6 +121,8 @@
 	\include{case/Ordinary Supplement}
 	\include{case/Sterling Summary}
 	\include{case/Sterling Supplement}
+	
+	\section*{Altered Items}
 	\include{case/Anchor Procedures}
 	\include{case/Anchor Supplement}
 	\include{case/Arcade Cabinets Procedures}
@@ -160,5 +174,8 @@
 	\include{case/VHS Tape Supplement}
 	\include{case/Vending Machine Procedures}
 	\include{case/Water Cooler Procedures}
+	
+	\chapter{Additional Files}
+	\include{censored1}
 	
 \end{document}          
